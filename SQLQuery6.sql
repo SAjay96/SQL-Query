@@ -31,5 +31,15 @@ insert into Person values(9,'Akshay','Nashik',26,'india')
 insert into Person values(10,'Atul','Pune',35,'india')
 
 
+insert into Person values(13,'Akshay','Nashik',26,null)
+insert into Person values(14,'Atul','Pune',35,null)
+
+
+insert into Person values(11,'emma','Pune',30,'UK')
+insert into Person values(12,'jos','london',36,'UK')
+
 update Person set age=25 where personId=3;
 update Person set country= 'USA' where personId=7
+
+select country,count(personid) as empcount from person
+group by country
